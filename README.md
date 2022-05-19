@@ -1,3 +1,20 @@
-# henrySpaceOdyssey
+# Henry's Space Odyssey
+Henry's Space Odyssey is an educational full-stack web application with NASA API integration.
 
-Henry's Space Odyssey (HSO) is a personal project I am working on for my nephew, Henry. He has a deep interest in both space and NASA, and hopes to one day work for NASA. I thought it would be fun if he had his own website he could go to view pictures, and learn about space. HSO is currently integrated with a handful of NASA API's, including the Astrological Picture of the Day API (APOD), the Earth Polychromatic Imaging Camera API (EPIC) and the MARS Rover API. 
+**Full Website:** https://henryspaceodyssey.netlify.app/index.html
+
+![alt tag](images/fulls/hnsGif.gif)
+
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript, NASA API
+
+This was my first attempt at building a full-stack web application from scratch. I used this project to get a better understanding of DOM manipulation and working with API's.
+
+## Optimizations
+
+When I improve this project I would set the input to date format for a better UX by allowing users to choose a date from the calendar instead of entering manually.
+
+## Lessons Learned:
+
+I learned that creating a successful project, isn't determined by it's complexity.
