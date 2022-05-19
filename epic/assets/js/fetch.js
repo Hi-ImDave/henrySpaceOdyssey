@@ -1,12 +1,13 @@
 //The user will enter a date.
 document.querySelector('button').addEventListener('click', getFetch)
+const api_Key = '2RMWPG1zptG1RB5UnvZf7WCnvVwgiUEE4SeaQqtZ'
 
 function getFetch(){
   const userChoice = document.querySelector('input').value
   console.log(userChoice)
   document.querySelector('input').value = '' // clears input
   
-  fetch(`https://api.nasa.gov/EPIC/api/natural/date/${userChoice}?api_key=2RMWPG1zptG1RB5UnvZf7WCnvVwgiUEE4SeaQqtZ`)
+  fetch(`https://api.nasa.gov/EPIC/api/natural/date/${userChoice}?api_key=${api_Key}`)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)

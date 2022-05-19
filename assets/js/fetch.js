@@ -4,10 +4,11 @@ window.addEventListener('load', getEpicThumb)
 // window.addEventListener('load', getMarsThumb)
 // window.addEventListener('load', getNasaImg)
 
-
+const api_Key = '2RMWPG1zptG1RB5UnvZf7WCnvVwgiUEE4SeaQqtZ'
 
 function getApodThumb(){
-  fetch(`https://api.nasa.gov/planetary/apod?api_key=2RMWPG1zptG1RB5UnvZf7WCnvVwgiUEE4SeaQqtZ`)
+  
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=${api_Key}`)
     .then(res => res.json()) // parse response as JSON
     .then(data => {
       console.log(data)
@@ -18,7 +19,7 @@ function getApodThumb(){
     });
 }
 function getEpicThumb(){
-  fetch(`https://api.nasa.gov/EPIC/api/natural/date/?api_key=2RMWPG1zptG1RB5UnvZf7WCnvVwgiUEE4SeaQqtZ`)
+  fetch(`https://api.nasa.gov/EPIC/api/natural/date/?api_key=${api_Key}`)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
@@ -29,7 +30,7 @@ function getEpicThumb(){
       });
 }
 function getMarsThumb(){
-  fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2022-04-11&api_key=2RMWPG1zptG1RB5UnvZf7WCnvVwgiUEE4SeaQqtZ&date`)
+  fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2022-04-11&api_key=${api_Key}&date`)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data) 
